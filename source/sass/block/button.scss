@@ -1,0 +1,9 @@
+.button {
+  border: none;
+  font: $button-mobile;
+  color: $base-white;
+  cursor: pointer;
+  background-color: transparent;
+  display: block;
+  text-transform: uppercase;
+}

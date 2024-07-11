@@ -1,0 +1,8 @@
+{
+  "icons": [
+    { "src": "favicons/supergym-icon180.png", "type": "image/png", "sizes": "180x180" },
+    { "src": "favicons/supergym-icon192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "favicons/supergym-icon256.png", "type": "image/png", "sizes": "256x256" },
+    { "src": "favicons/supergym-icon512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

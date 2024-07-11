@@ -1,0 +1,129 @@
+/* Global Variables */
+$mobile-only-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+/* Text-color */
+
+$primary: #102654;
+$base-white: #ffffff;
+$primary-lighter: #103aae;
+$text-grad: -51deg, #0041ca 0%, #0041ca 50%, #d10a42 100%;
+
+/* Button Colors */
+
+$light-border: #ffffff;
+$dark-border: #102654;
+$lighter-border: #1c3374;
+$button-grad: -44deg, #00359f 0%, #d10a42 100%;
+$tabs-status: #d10a42;
+
+/* Background Colors */
+
+$main-background: #ffffff;
+$auxiliary-background: #f8f9fc;
+$banner-background: #ed0233;
+$darker-background: #102654;
+$grad-background: 90deg, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%;
+$ultra-darker-background: #030a1a;
+$ancillary-block-background: #1c3374;
+
+/* Icon Colors */
+
+$light-icons: #ffffff;
+$darker-icons: #102654;
+
+/* Forms Colors */
+
+$base-form: #ffffff;
+$wrong-form: #ff121f;
+
+
+/* Desktop Text Style */
+
+$h1-desktop: 800 92px / 110px $primary-font;
+$h2-desktop: 600 82px / 96px $primary-font;
+$h3-desktop: 600 54px / 54px $primary-font;
+$h4-desktop: 700 26px / 26px $secondary-font;
+$h5-desktop: 400 24px / 24px $secondary-font;
+$h6-desktop: 400 22px / 22px $secondary-font;
+
+// ---------------------------------
+
+$large-desktop: 300 18px / 24px $secondary-font;
+$medium-desktop: 300 16px / 24px $secondary-font;
+$small-desktop: 400 14px / 22px $secondary-font;
+
+// ---------------------------------
+
+$tabs-lined-desktop: 400 20px / 20px $secondary-font;
+$tabs-button-desktop: 400 18px / 18px $secondary-font;
+$large-button-desktop: 700 14px / 14px $secondary-font;
+$medium-button-desktop: 700 12px / 12px $secondary-font;
+
+// ---------------------------------
+
+$largest-number-desktop: 700 100px / 150% $secondary-font;
+$large-number-desktop: 700 70px / 70px $secondary-font;
+$medium-number-desktop: 700 60px / 150% $secondary-font;
+$number-desktop: 700 40px / 40px $secondary-font;
+
+
+/* Tablet Text Style */
+
+$h1-tablet: 800 72px / 85px $primary-font;
+$h2-tablet: 600 48px / 54px $primary-font;
+$h3-tablet: 600 42px / 42px $primary-font;
+$h4-tablet: 700 24px / 24px $secondary-font;
+$h5-tablet: 400 22px / 22px $secondary-font;
+$h6-tablet: 400 22px / 22px $secondary-font;
+
+// ---------------------------------
+
+$large-tablet: 300 18px / 24px $secondary-font;
+$medium-tablet: 300 16px / 24px $secondary-font;
+$small-tablet: 400 14px / 22px $secondary-font;
+
+// ---------------------------------
+
+$tabs-lined-tablet: 400 18px / 18px $secondary-font;
+$tabs-button-tablet: 400 18px / 18px $secondary-font;
+$large-button-tablet: 700 14px / 14px $secondary-font;
+$medium-button-tablet: 700 12px / 12px $secondary-font;
+
+// ---------------------------------
+
+$largest-number-tablet: 700 100px / 150% $secondary-font;
+$large-number-tablet: 700 70px / 70px $secondary-font;
+$medium-number-tablet: 700 60px / 150% $secondary-font;
+$number-tablet: 700 24px / 24px $secondary-font;
+
+
+/* Mobil Text Style */
+
+$h1-mobile: 800 62px / 62px $primary-font;
+$h2-mobile: 600 48px / 54px $primary-font;
+$h3-mobile: 600 32px / 32px $primary-font;
+$h4-mobile: 700 22px / 22px $secondary-font;
+$h5-mobile: 400 20px / 20px $secondary-font;
+$h6-mobile: 400 18px / 20px $secondary-font;
+
+// ---------------------------------
+
+$large-mobile: 300 16px / 20px $secondary-font;
+$medium-mobile: 300 14px / 22px $secondary-font;
+$small-mobile: 400 14px / 20px $secondary-font;
+
+// ---------------------------------
+
+$tabs-lined-mobile: 400 16px / 16px $secondary-font;
+$tabs-button-mobile: 400 16px / 16px $secondary-font;
+$large-button-mobile: 700 14px / 14px $secondary-font;
+$button-mobile: 700 12px / 12px $secondary-font;
+
+// ---------------------------------
+
+$largest-number-mobile: 700 80px / 150% $secondary-font;
+$large-number-mobile: 700 64px / 64px $secondary-font;
+$medium-number-mobile: 700 48px / 150% $secondary-font;
+$number-mobile: 700 24px / 24px $secondary-font;

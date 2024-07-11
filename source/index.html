@@ -5,18 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/supergym-favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/supergym-favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicons/supergym-apple-favicon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="preload" href="./fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <script src="scripts/index.js" defer="defer"></script>
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
+
+    <main class="page-main">
+      <section class="page-main__hero hero" data-test="hero">
+        <div class="hero__wrapper main-wrapper">
+          <header class="hero__header">
+            <picture class="hero__logo-wrapper">
+              <source media="(min-width: 1366px)" type="image/svg+xml" srcset="img/supergym-logo-desktop.svg" width="130" height="26">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/supergym-logo-tablet.svg" width="110" height="22">
+              <img class="hero__logo" src="img/supergym-logo-mobile.svg" width="100" height="20" alt="Логотип компании Supergym.">
+            </picture>
+            <a class="hero__phone" href="tel:+78005555555">8 800 555-55-55</a>
+          </header>
+          <div class="hero__content-wrapper">
+            <div class="hero__info-wrapper">
+              <div class="hero__text-wrapper">
+                <p class="hero__subtitle">Тренажёрный зал Групповые занятия Кардио-зона</p>
+                <h1 class="hero__title"><span class="hero__title-city">Омск</span> фитнес центр</h1>
+              </div>
+              <button class="hero__button button" type="button">Купить абонемент</button>
+            </div>
+            <picture class="hero__coach-image-wrapper">
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/coach-desktop@1x.webp 1x, img/coach-desktop@2x.webp 2x" width="500" height="524">
+              <source type="image/webp" srcset="img/coach-tablet@1x.webp 1x, img/coach-tablet@2x.webp 2x" width="324" height="390">
+              <source media="(min-width: 1366px)" type="image/png" srcset="img/coach-desktop@1x.png 1x, img/coach-desktop@2x.png 2x" width="500" height="524">
+              <img class="hero__image-coach" src="img/coach-tablet@1x.png" srcset="img/coach-tablet@2x.png 2x" width="324" height="390" alt="Накаченный тренер с футболкой супермена.">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
@@ -25,8 +59,14 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
+    <div data-test="footer">footer</div> -->
   </body>
 
 </html>
+
+<!-- пример использования спрайта -->
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<svg>
+  <use href="/__spritemap#sprite-user"></use>
+</svg> -->
+<!-- примеры требуемых атрибутов data-test="*" -->
