@@ -6,10 +6,13 @@
 @import "./common/fonts";
 @import "./common/variables";
 @import "./common/global";
+@import "./common/visually-hidden";
 
 /* BLOCKS */
+@import "./block/page-body";
 @import "./block/button";
 @import "./block/page-main";
 @import "./block/main-wrapper";
 @import "./block/hero";
+@import "./block/about-us";
 

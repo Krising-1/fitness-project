@@ -45,16 +45,44 @@
   text-decoration: none;
   font: $h4-mobile;
   color: $base-white;
-  padding: 13px 0 15px 15px;
+  padding: 13px 0 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font: $h4-tablet;
-    padding: 30px 0 30px 15px;
+    padding: 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     font: $h4-desktop;
     padding-top: 31px;
+  }
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus-visible {
+    color: $ancillary-block-background;
+    outline: none;
+  }
+
+  &:active {
+    color: $ancillary-block-background;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: $primary;
+      left: 0;
+      bottom: 30%;
+    }
+  }
+
+  &:disabled {
+    color: $auxiliary-background;
   }
 }
 
@@ -178,6 +206,31 @@
     padding-top: 26px;
     padding-bottom: 24px;
   }
+
+  &:hover {
+    background-color: $main-background;
+    color: $primary-lighter;
+  }
+
+  &:focus-visible {
+    background-color: rgba($color: $main-background, $alpha: 0.8);
+    border: 2px solid #000000;
+    outline: none;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $main-background;
+    outline: none;
+    color: $primary;
+  }
+
+  &:disabled {
+    cursor: default;
+    color: $base-white;
+    opacity: 0.5;
+    background-color: transparent;
+  }
 }
 
 .hero__coach-image-wrapper {
@@ -190,9 +243,14 @@
 
 .hero__image-coach {
   vertical-align: bottom;
+  background-color: #2a3166;
+  min-height: 390px;
+  min-width: 324px;
 
   @media (min-width: $desktop-width) {
     display: block;
     margin-right: 72px;
+    min-height: 524px;
+    min-width: 500px;
   }
 }

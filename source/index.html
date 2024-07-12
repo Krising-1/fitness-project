@@ -16,12 +16,12 @@
     <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <script src="scripts/index.js" defer="defer"></script>
+    <script src="js/main.js" type="module" defer="defer"></script>
   </head>
 
   <body class="page-body">
 
-    <main class="page-main">
+    <main class="page-body__main page-main">
       <section class="page-main__hero hero" data-test="hero">
         <div class="hero__wrapper main-wrapper">
           <header class="hero__header">
@@ -44,14 +44,40 @@
               <source media="(min-width: 1366px)" type="image/webp" srcset="img/coach-desktop@1x.webp 1x, img/coach-desktop@2x.webp 2x" width="500" height="524">
               <source type="image/webp" srcset="img/coach-tablet@1x.webp 1x, img/coach-tablet@2x.webp 2x" width="324" height="390">
               <source media="(min-width: 1366px)" type="image/png" srcset="img/coach-desktop@1x.png 1x, img/coach-desktop@2x.png 2x" width="500" height="524">
-              <img class="hero__image-coach" src="img/coach-tablet@1x.png" srcset="img/coach-tablet@2x.png 2x" width="324" height="390" alt="Накаченный тренер с футболкой супермена.">
+              <img class="hero__image-coach" src="img/coach-tablet@1x.png" srcset="img/coach-tablet@2x.png 2x" width="324" height="390" alt="Накаченный тренер в футболке с суперменом.">
             </picture>
           </div>
         </div>
       </section>
+      <section class="page-main__about-us about-us" data-test="about">
+        <div class="about-us__wrapper main-wrapper">
+          <div class="about-us__text-wrapper">
+            <h2 class="about-us__title">Тренажёрный зал</h2>
+            <p class="about-us__subtitle">Просторный зал площадью 900 кв/м</p>
+            <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для&nbsp;укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
+          </div>
+          <div class="about-us__media-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/about-gym-desktop@1x.webp 1x, img/about-gym-desktop@2x.webp 2x" width="660" height="400">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/about-gym-tablet@1x.webp 1x, img/about-gym-tablet@2x.webp 2x" width="678" height="345">
+              <source type="image/webp" srcset="img/about-gym-mobile@1x.webp 1x, img/about-gym-mobile@2x.webp 2x" width="320" height="280">
+              <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/about-gym-desktop@1x.jpg 1x, img/about-gym-desktop@2x.jpg 2x" width="660" height="400">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/about-gym-tablet@1x.jpg 1x, img/about-gym-tablet@2x.jpg 2x" width="678" height="345">
+              <img class="about-us__image" src="img/about-gym-mobile@1x.jpg" srcset="img/about-gym-mobile@2x.jpg 2x" width="320" height="280" alt="Фотография спортивного зала." loading="lazy">
+            </picture>
+            <div class="about-us__video-wrapper">
+              <iframe class="about-us__video" title="Видео о нашем спорт зале." src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1" width="320" height="170" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <button class="about-us__play-button button"><span class="visually-hidden">Запустить видео.</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- <div data-test="about">about</div>
-    <div data-test="price">price</div>
+    <footer class="page-body__footer page-footer">
+
+    </footer>
+    <!-- <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
