@@ -1,0 +1,230 @@
+.offers__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.offers__semi-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.offers__title {
+  font: $h3-mobile;
+  width: fit-content;
+  margin: 0 auto 40px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font: $h3-tablet;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h3-desktop;
+    margin-bottom: 70px;
+  }
+}
+
+.offers__price-wrapper {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.offers__price-wrapper div {
+  padding: 30px;
+  padding-bottom: 28px;
+  background-color: $banner-background;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 25px 38px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 280px;
+    padding: 40px 45px 38px;
+  }
+}
+
+.offers__price-wrapper small {
+  display: block;
+  font: $h4-mobile;
+  color: $base-white;
+  text-align: center;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font: $h4-tablet;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h4-desktop;
+  }
+}
+
+.offers__price-wrapper strong {
+  font: $large-number-mobile;
+  color: $base-white;
+  display: block;
+  text-align: center;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font: $large-number-tablet;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+}
+
+.offers__price-wrapper p {
+  font: $large-mobile;
+  color: $base-white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font: $large-tablet;
+    text-align: start;
+  }
+}
+
+.offers__price-link {
+  color: $base-white;
+  font: $large-button-desktop;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  text-decoration: underline 1px $light-border;
+  padding-bottom: 7px;
+  text-underline-offset: 7px;
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    margin: 0;
+    margin-top: auto;
+  }
+}
+
+.offers__price-image {
+  display: block;
+}
+
+.offers__benefits-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.offers__list {
+  @include list-style-none;
+
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+}
+
+.offers__item {
+  border: 7px solid;
+  border-image: linear-gradient(-51deg, #00359f 0%, #d10a42 100%);
+  border-image-slice: 1;
+  padding: 21px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 324px;
+    min-height: 188px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 174px;
+    width: 560px;
+    padding-top: 21px;
+  }
+}
+
+.offers__item h3 {
+  font: $h4-mobile;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font: $h4-desktop;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+}
+
+.offers__item p {
+  font: $medium-mobile;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font: $medium-desktop;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.offers__item-link {
+  text-align: center;
+  font: $large-button-mobile;
+  color: $primary;
+  text-decoration: underline 1px #74819c;
+  width: fit-content;
+  margin: 0 auto;
+  text-underline-offset: 7px;
+
+  @media (min-width: $tablet-width) {
+    font: $large-button-desktop;
+    display: block;
+    text-align: start;
+    margin-top: auto;
+    margin-left: 0;
+  }
+}
