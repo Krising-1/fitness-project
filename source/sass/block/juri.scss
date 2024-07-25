@@ -1,0 +1,116 @@
+.juri__wrapper {
+  padding: 40px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 104px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 99px 104px;
+  }
+}
+
+.juri__swiper-wrapper {
+  position: relative;
+}
+
+.juri__title {
+  font: $h3-mobile;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font: $h3-desktop;
+    margin-bottom: 46px;
+  }
+}
+
+.juri__image {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    height: 301px;
+  }
+}
+
+.juri__card-more-info {
+  color: $base-white;
+  box-sizing: border-box;
+  padding-top: 63px;
+  position: absolute;
+  width: 100%;
+  height: 109px;
+  bottom: 0;
+  margin-left: 1px;
+  transition-duration: 0.5s;
+  transition-property: height background;
+}
+
+.juri__card-more-title {
+  font: $h6-desktop;
+  width: 100%;
+  bottom: 23px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 9px;
+  margin-left: 0;
+}
+
+.juri__more-sub-title {
+  display: none;
+  font: $medium-desktop;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.juri__more-list {
+  display: none;
+  margin: 0;
+  width: 144px;
+  padding-left: 66px;
+  list-style: none;
+}
+
+
+.juri__more-item {
+  font: $small-desktop;
+  max-width: 144px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: $white-background;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.juri__card-more-wrapper:hover .juri__card-more-info,
+.juri__card-more-wrapper:focus-visible .juri__card-more-info {
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    background-color: rgba($color: $dark-border, $alpha: 0.89);
+  }
+}
+
+.juri__card-more-wrapper:hover .juri__more-sub-title,
+.juri__card-more-wrapper:focus-visible .juri__more-sub-title,
+.juri__card-more-wrapper:hover .juri__more-list,
+.juri__card-more-wrapper:focus-visible .juri__more-list {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+

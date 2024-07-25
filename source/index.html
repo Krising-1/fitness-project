@@ -38,7 +38,7 @@
                 <p class="hero__subtitle">Тренажёрный зал Групповые занятия Кардио-зона</p>
                 <h1 class="hero__title"><span class="hero__title-city">Омск</span> фитнес центр</h1>
               </div>
-              <button class="hero__button button" type="button">Купить абонемент</button>
+              <a class="hero__button button">Купить абонемент</a>
             </div>
             <picture class="hero__coach-image-wrapper">
               <source media="(min-width: 1366px)" type="image/webp" srcset="img/coach-desktop@1x.webp 1x, img/coach-desktop@2x.webp 2x" width="500" height="524">
@@ -66,26 +66,291 @@
               <source media="(min-width: 768px)" type="image/jpeg" srcset="img/about-gym-tablet@1x.jpg 1x, img/about-gym-tablet@2x.jpg 2x" width="678" height="345">
               <img class="about-us__image" src="img/about-gym-mobile@1x.jpg" srcset="img/about-gym-mobile@2x.jpg 2x" width="320" height="280" alt="Фотография спортивного зала." loading="lazy">
             </picture>
-            <div class="about-us__video-wrapper">
-              <iframe class="about-us__video" title="Видео о нашем спорт зале." src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1" width="320" height="170" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <button class="about-us__play-button button"><span class="visually-hidden">Запустить видео.</span></button>
-            </div>
+            <a class="about-us__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-href="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+              <span class="about-us__play-button"><span class="visually-hidden">Запустить видео.</span></span>
+              <picture>
+                <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/video-background-desktop@1x.webp 1x, img/video-background-desktop@2x.webp 2x" width="360" height="230">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="img/video-background-tablet@1x.webp 1x, img/video-background-tablet@2x.webp 2x" width="270" height="170">
+                <source type="image/jpeg" srcset="img/video-background-mobile@1x.webp 1x, img/video-background-mobile@2x.webp 2x" width="320" height="170">
+                <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/video-background-desktop@1x.jpg 1x, img/video-background-desktop@2x.jpg 2x" width="360" height="230">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="img/video-background-tablet@1x.jpg 1x, img/video-background-tablet@2x.jpg 2x" width="270" height="170">
+                <img class="about-us__video-preview" src="img/video-background-mobile@1x.jpg" srcset="img/video-background-mobile@2x.jpg 2x" width="320" height="170" alt="Тренажерный зал Supergym.">
+              </picture>
+            </a>
           </div>
+        </div>
+      </section>
+      <section class="page-main__abonements abonements" data-test="price">
+        <div class="abonements__wrapper main-wrapper">
+          <h2 class="abonements__title">Абонементы</h2>
+          <ul class="abonements__duration-list">
+            <li class="abonements__duration-item">
+              <button class="abonements__duration-button abonements__duration-button--active button" type="button">1 месяц</button>
+            </li>
+            <li class="abonements__duration-item">
+              <button class="abonements__duration-button button" type="button">6 месяцев</button>
+            </li>
+            <li class="abonements__duration-item">
+              <button class="abonements__duration-button button" type="button">12 месяцев</button>
+            </li>
+          </ul>
+          <ul class="abonements__type-list">
+            <li class="abonements__type-item">
+              <h3 class="abonements__type-title">С тренером</h3>
+              <p class="abonements__type-description">12 занятий</p>
+              <div class="abonements__cost-wrapper">
+                <p class="abonements__cost-background" aria-hidden="true">5000</p>
+                <p class="abonements__cost-current">5000</p>
+              </div>
+              <a class="abonements__type-link button" href="#">Купить абонемент</a>
+            </li>
+            <li class="abonements__type-item">
+              <h3 class="abonements__type-title">Дневной</h3>
+              <p class="abonements__type-description">с 8:00 до 17:00</p>
+              <div class="abonements__cost-wrapper">
+                <p class="abonements__cost-background" aria-hidden="true">1700</p>
+                <p class="abonements__cost-current">1700</p>
+              </div>
+              <a class="abonements__type-link button" href="#">Купить абонемент</a>
+            </li>
+            <li class="abonements__type-item">
+              <h3 class="abonements__type-title">Полный день</h3>
+              <p class="abonements__type-description">с 8:00 до 22:00</p>
+              <div class="abonements__cost-wrapper">
+                <p class="abonements__cost-background" aria-hidden="true">2700</p>
+                <p class="abonements__cost-current">2700</p>
+              </div>
+              <a class="abonements__type-link button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-main__super-games super-games" data-test="games">
+        <div class="super-games__wrapper main-wrapper">
+          <div class="super-games__container">
+            <div class="super-games__inner-container">
+              <h2 class="super-games__title">SUPER GAMES</h2>
+              <div class="super-games__date-time-container">
+                <div class="super-games__date-container">
+                  <h3 class="super-games__date-container-title">Дата</h3>
+                  <time class="super-games__date-container-time" datetime="2019-05-07"><span class="super-games__date-container-time-day">7</span><span class="super-games__date-container-time-month">Марта 2019</span></time>
+                </div>
+                <div class="super-games__time-container">
+                  <h3 class="super-games__date-container-title">Время</h3>
+                  <time class="super-games__date-container-time" datetime="12:00">12:00</time>
+                </div>
+              </div>
+            </div>
+            <p class="super-games__text">Ежегодные соревнования по&nbsp;CrossFit</p>
+            <a class="super-games__link button" href="#">заполнить заявку</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1366px)" type="image/webp" srcset="img/games-sportsman-desktop@1x.webp 1x, img/games-sportsman-desktop@2x.webp 2x" width="660" height="500">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/games-sportsman-tablet@1x.webp 1x, img/games-sportsman-tablet@2x.webp 2x" width="378" height="348">
+            <source type="image/webp" srcset="img/games-sportsman-mobile@1x.webp 1x, img/games-sportsman-mobile@2x.webp 2x" width="290" height="290">
+            <source media="(min-width: 1366px)" type="image/jpeg" srcset="img/games-sportsman-desktop@1x.jpg 1x, img/games-sportsman-desktop@2x.jpg 2x" width="660" height="500">
+            <source media="(min-width: 768px)" type="image/jpeg" srcset="img/games-sportsman-tablet@1x.jpg 1x, img/games-sportsman-tablet@2x.jpg 2x" width="378" height="348">
+            <img class="super-games__image" src="img/games-sportsman-mobile@1x.jpg" srcset="img/games-sportsman-mobile@2x.jpg 2x" width="290" height="290" alt="Накаченный мужчина ударяет по мелу, он разлетается в стороны." loading="lazy">
+          </picture>
+        </div>
+      </section>
+      <section class="page-main__juri juri" data-test="juri">
+        <div class="juri__wrapper main-wrapper" tabindex="5">
+          <h2 class="juri__title">Жюри</h2>
+          <div class="juri__swiper-wrapper">
+            <div class="swiper swiper--juri">
+              <div class="swiper-wrapper swiper-wrapper--juri">
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-anna@1x.webp 1x, img/juri-anna@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-anna@1x.jpg" srcset="img/juri-anna@2x.jpg 2x" width="260" height="300" alt="Девушка в бардовом свитшоте с длинными темными волосами." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Анна Павлова</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-aleksey@1x.webp 1x, img/juri-aleksey@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-aleksey@1x.jpg" srcset="img/juri-aleksey@2x.jpg 2x" width="260" height="300" alt="Мужчина в черном лонгсливе с короткими темными волосами." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Алексей Лавров</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-aleksandr@1x.webp 1x, img/juri-aleksandr@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-aleksandr@1x.jpg" srcset="img/juri-aleksandr@2x.jpg 2x" width="260" height="300" alt="Мужчина в майке и очках с короткими темными волосами показывает мышцы." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Александр Пашков</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-mary@1x.webp 1x, img/juri-mary@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-mary@1x.jpg" srcset="img/juri-mary@2x.jpg 2x" width="260" height="300" alt="Девушка с длинными темными волосами подпирает рукой подбородок и смотрит в камеру." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Мария Кетова</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-aleksey@1x.webp 1x, img/juri-aleksey@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-aleksey@1x.jpg" srcset="img/juri-aleksey@2x.jpg 2x" width="260" height="300" alt="Мужчина в черном лонгсливе с короткими темными волосами." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Алексей Лавров</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-aleksandr@1x.webp 1x, img/juri-aleksandr@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-aleksandr@1x.jpg" srcset="img/juri-aleksandr@2x.jpg 2x" width="260" height="300" alt="Мужчина в майке и очках с короткими темными волосами показывает мышцы." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Александр Пашков</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-anna@1x.webp 1x, img/juri-anna@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-anna@1x.jpg" srcset="img/juri-anna@2x.jpg 2x" width="260" height="300" alt="Девушка в бардовом свитшоте с длинными темными волосами." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Анна Павлова</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--juri juri__card-more-wrapper" tabindex="1">
+                  <picture>
+                    <source type="image/webp" srcset="img/juri-mary@1x.webp 1x, img/juri-mary@2x.webp 2x" width="260" height="300">
+                    <img class="juri__image" src="img/juri-mary@1x.jpg" srcset="img/juri-mary@2x.jpg 2x" width="260" height="300" alt="Девушка с длинными темными волосами подпирает рукой подбородок и смотрит в камеру." loading="lazy">
+                  </picture>
+                  <div class="juri__card-more-info">
+                    <h3 class="juri__card-more-title">Мария Кетова</h3>
+                    <p class="juri__more-sub-title">CrossFit</p>
+                    <ul class="juri__more-list">
+                      <li class="juri__more-item">Certified Level 3 Trainer</li>
+                      <li class="juri__more-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri__more-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev--juri"></div>
+            <div class="swiper-button-next swiper-button-next--juri"></div>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__benefits benefits" data-test="features">
+        <div class="benefits__wrapper main-wrapper">
+          <h2 class="benefits__title">Наши преимущества</h2>
+          <ul class="benefits__list">
+            <li>
+              <div>
+                <strong>900</strong>
+                <small>кв/м</small>
+              </div>
+              <div>
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и&nbsp;толкучки</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>70</strong>
+                <small>машин</small>
+              </div>
+              <div>
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдёте место для&nbsp;своей машины на нашей парковке</p>
+              </div>
+            </li>
+            <li>
+              <strong>100</strong>
+              <h3>Тренажёров</h3>
+              <p>Современные тренажёры на&nbsp;все&nbsp;группы мышц</p>
+            </li>
+            <li>
+              <div>
+                <strong>350</strong>
+                <small>мест</small>
+              </div>
+              <div>
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>5+</strong>
+                <small>лет</small>
+              </div>
+              <div>
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="page-body__footer page-footer">
 
     </footer>
-    <!-- <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
+    <!--
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
+    <div data-test="footer">footer</div>
+    -->
   </body>
 
 </html>

@@ -1,5 +1,6 @@
 // Vendor
 @import "vendor/normalize";
+@import "vendor/swiper";
 
 /* GLOBAL */
 @import "./common/mixin";
@@ -15,4 +16,7 @@
 @import "./block/main-wrapper";
 @import "./block/hero";
 @import "./block/about-us";
-
+@import "./block/abonements";
+@import "./block/super-games";
+@import "./block/juri";
+@import "./block/benefits";

@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 120px;
-    padding-bottom: 240px;
+    padding-bottom: 204px;
     display: flex;
   }
 }
@@ -96,17 +96,18 @@
   background-color: #d9dbe7;
 }
 
-.about-us__video-wrapper {
+.about-us__link {
   position: relative;
   width: 320px;
   height: 170px;
   background-color: #7c8fb4;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 270px;
     height: 170px;
     position: absolute;
-    top: 75%;
+    bottom: -85px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -124,43 +125,23 @@
   margin: 0;
   width: 320px;
   height: 170px;
-  background-image:
-    image-set(
-      url("../../img/video-background-mobile@1x.webp") type("image/webp") 1x,
-      url("../../img/video-background-mobile@2x.webp") type("image/webp") 2x,
-      url("../../img/video-background-mobile@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/video-background-mobile@2x.jpg") type("image/jpeg") 2x,
-    );
+  position: absolute;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     width: 270px;
     height: 170px;
-    background-image:
-      image-set(
-        url("../../img/video-background-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/video-background-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/video-background-tablet@1x.jpg") type("image/jpeg") 1x,
-        url("../../img/video-background-tablet@2x.jpg") type("image/jpeg") 2x,
-      );
   }
 
   @media (min-width: $desktop-width) {
     width: 360px;
     height: 230px;
-    background-image:
-      image-set(
-        url("../../img/video-background-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/video-background-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/video-background-desktop@1x.jpg") type("image/jpeg") 1x,
-        url("../../img/video-background-desktop@2x.jpg") type("image/jpeg") 2x,
-      );
   }
 }
 
 .about-us__play-button {
-  display: none;
-  width: 72px;
-  height: 72px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   border: 2px solid rgba(237, 2, 51, 0.2);
   position: absolute;
@@ -194,67 +175,9 @@
     mask-image: url("/__spritemap#sprite-button-play-triangle-view");
   }
 
-  &:hover {
-    border-color: rgba($color: $darker-background, $alpha: 0.6);
-
-    &::after {
-      background-image: none;
-      background-color: $main-background;
-    }
-
-    &::before {
-      background-color: rgba($color: $darker-background, $alpha: 0.6);
-    }
-  }
-
-  &:focus-visible {
-    border-color: $darker-background;
-    outline: none;
-
-    &::after {
-      background-image: none;
-      background-color: #c8c9cc;
-    }
-
-    &::before {
-      background-color: $darker-background;
-    }
-  }
-
-  &:active {
-    border-color: $darker-background;
-    outline: none;
-
-    &::after {
-      width: 58px;
-      height: 58px;
-      background-image: none;
-      background-color: $main-background;
-    }
-
-    &::before {
-      background-color: $darker-background;
-    }
-  }
-
-  &:disabled {
-    cursor: default;
-    opacity: 0.6;
-    border-color: $darker-background;
-
-    &::after {
-      background-image: none;
-      background-color: $main-background;
-    }
-
-    &::before {
-      background-color: $darker-background;
-    }
-  }
-
   @media (min-width: $desktop-width) {
-    width: 100px;
-    height: 100px;
+    width: 96px;
+    height: 96px;
 
     &::after {
       width: 72px;
@@ -270,3 +193,69 @@
   }
 }
 
+.about-us__link:hover .about-us__play-button {
+  border-color: rgba($color: $darker-background, $alpha: 0.6);
+
+  &::after {
+    background-image: none;
+    background-color: $main-background;
+  }
+
+  &::before {
+    background-color: rgba($color: $darker-background, $alpha: 0.6);
+  }
+}
+
+.about-us__link:focus-visible .about-us__play-button {
+  border-color: $darker-background;
+  outline: none;
+
+  &::after {
+    background-image: none;
+    background-color: #c8c9cc;
+  }
+
+  &::before {
+    background-color: $darker-background;
+  }
+}
+
+.about-us__link:active .about-us__play-button {
+  border-color: $darker-background;
+  outline: none;
+
+  &::after {
+    width: 58px;
+    height: 58px;
+    background-image: none;
+    background-color: $main-background;
+  }
+
+  &::before {
+    background-color: $darker-background;
+  }
+}
+
+.about-us__link--disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.about-us__link--disabled .about-us__play-button {
+  cursor: default;
+  opacity: 0.6;
+  border-color: $darker-background;
+
+  &::after {
+    background-image: none;
+    background-color: $main-background;
+  }
+
+  &::before {
+    background-color: $darker-background;
+  }
+}
+
+.about-us__video-preview {
+  display: block;
+}

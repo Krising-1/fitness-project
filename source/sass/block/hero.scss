@@ -188,9 +188,12 @@
 
 .hero__button {
   font: $button-mobile;
-  width: 100%;
+  box-sizing: border-box;
+  width: 290px;
   padding: 23px 22px 22px;
   border: 2px solid #ffffff;
+  display: block;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 185px;
@@ -224,13 +227,14 @@
     outline: none;
     color: $primary;
   }
+}
 
-  &:disabled {
-    cursor: default;
-    color: $base-white;
-    opacity: 0.5;
-    background-color: transparent;
-  }
+.hero__button--disabled {
+  cursor: default;
+  color: $base-white;
+  opacity: 0.5;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 .hero__coach-image-wrapper {

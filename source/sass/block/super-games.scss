@@ -1,0 +1,233 @@
+.super-games__wrapper {
+  padding: 25px 15px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 103px;
+  }
+}
+
+.super-games__container {
+  padding: 40px 39px 40px 40px;
+  background-color: $banner-background;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 40px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 80px;
+    box-sizing: border-box;
+    width: 500px;
+  }
+}
+
+.super-games__inner-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.super-games__title {
+  font: $h2-mobile;
+  color: $base-white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font: $h2-tablet;
+    max-width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h2-desktop;
+    max-width: 168px;
+  }
+}
+
+.super-games__date-time-container {
+  @media (min-width: $tablet-width) {
+    max-width: 100px;
+    width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
+    max-width: 95px;
+  }
+}
+
+.super-games__date-container {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.super-games__date-container-title {
+  font: $large-mobile;
+  color: $base-white;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -3px;
+    background-color: $white-background;
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $large-tablet;
+
+    &::after {
+      bottom: -2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $large-desktop;
+    margin-bottom: 11px;
+
+    &::after {
+      bottom: -5px;
+    }
+  }
+}
+
+.super-games__date-container-time-day {
+  font: $number-mobile;
+  color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    font: $number-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $number-desktop;
+  }
+}
+
+.super-games__date-container-time-month {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $base-white;
+  margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    font: $small-tablet;
+    max-width: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $small-desktop;
+  }
+}
+
+.super-games__date-container-time {
+  font: $number-mobile;
+  color: $base-white;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $number-desktop;
+  }
+}
+
+.super-games__text {
+  font: $large-mobile;
+  color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    font: $large-tablet;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $large-desktop;
+    margin-bottom: 32px;
+  }
+}
+
+.super-games__link {
+  font: $button-mobile;
+  text-decoration: none;
+  color: $base-white;
+  text-align: center;
+  border: 2px solid $light-border;
+  padding: 22px;
+
+  &:hover {
+    background-color: $main-background;
+    color: $primary-lighter;
+  }
+
+  &:focus-visible {
+    background-color: rgba($color: $main-background, $alpha: 0.8);
+    border: 2px solid #000000;
+    outline: none;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $main-background;
+    outline: none;
+    color: $primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $medium-button-tablet;
+    padding: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 24px;
+  }
+}
+
+.super-games__link--disabled {
+  cursor: default;
+  color: $base-white;
+  opacity: 0.5;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.super-games__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -1px;
+  }
+}
