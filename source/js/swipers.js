@@ -1,10 +1,12 @@
-import Swiper from 'swiper';
-import {Navigation, Pagination} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import Swiper from './vendor/swiper-bundle/swiper.min.mjs';
+import Navigation from './vendor/swiper-bundle/modules/navigation.min.mjs';
+import Pagination from './vendor/swiper-bundle/modules/pagination.min.mjs';
+import './vendor/swiper-bundle/swiper.css';
+import './vendor/swiper-bundle/modules/navigation.css';
 
 const initJuriSwiper = () => {
   new Swiper('.swiper--juri', {
+
     modules: [Navigation, Pagination],
 
     width: 260,

@@ -4,10 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -62,7 +64,7 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     width: 280px;
-    padding: 40px 45px 38px;
+    padding: 40px 45px 35px;
   }
 }
 
@@ -118,16 +120,44 @@
   display: block;
   text-align: center;
   text-decoration: underline 1px $light-border;
+  padding-top: 10px;
   padding-bottom: 7px;
   text-underline-offset: 7px;
   width: fit-content;
   margin: 0 auto;
+  margin-top: -10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $white-background;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 1;
+    text-decoration: underline 1px $light-border;
+    text-underline-offset: 7px;
+  }
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
     margin: 0;
     margin-top: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: -10px;
+  }
+}
+
+.offers__price-link--disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .offers__price-image {
@@ -214,17 +244,41 @@
 .offers__item-link {
   text-align: center;
   font: $large-button-mobile;
-  color: $primary;
+  color: #1c3374;
   text-decoration: underline 1px #74819c;
   width: fit-content;
   margin: 0 auto;
   text-underline-offset: 7px;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline 1px #1c3374;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $lighter-border;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 1;
+    text-decoration: underline 1px $dark-border;
+    text-underline-offset: 7px;
+  }
 
   @media (min-width: $tablet-width) {
     font: $large-button-desktop;
     display: block;
     text-align: start;
     margin-top: auto;
-    margin-left: 0;
+    margin-left: -10px;
   }
+}
+
+.offers__item-link--disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }

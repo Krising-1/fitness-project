@@ -6,7 +6,7 @@
   @media (min-width: 768px) {
     display: block;
     color: #102654;
-    top: calc(50% - 21px);
+    top: calc(50% - 26px);
     margin: 0;
 
     &::after {
@@ -16,26 +16,78 @@
   }
 
   @media (min-width: 1366px) {
-    top: calc(50% - 20px);
+    top: calc(50% - 26px);
   }
 }
 
 .swiper-button-prev.swiper-button-prev--juri {
   @media (min-width: 768px) {
-    left: -54px;
+    left: -70px;
   }
 }
 
 .swiper-button-next.swiper-button-next--juri {
   @media (min-width: 768px) {
-    right: -63px;
+    right: -70px;
   }
 
   @media (min-width: 1366px) {
-    right: -65px;
+    right: -72px;
   }
 }
 
 .swiper-slide--juri {
   position: relative;
+}
+
+.swiper-button-prev.swiper-button-prev--juri,
+.swiper-button-next.swiper-button-next--juri {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    border: 1px solid #102654;
+    border-radius: 50%;
+  }
+
+  &:focus-visible {
+    border: 1px solid #102654;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    background-color: #102654;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 33px;
+    mask-image: url("/__spritemap#sprite-swiper-arrow-view");
+    background-color: #102654;
+    mask-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.swiper-button-next.swiper-button-next--juri {
+  &::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.swiper-button-prev--juri-disabled,
+.swiper-button-next--juri-disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
