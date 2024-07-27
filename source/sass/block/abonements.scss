@@ -5,6 +5,7 @@
 
 .abonements__wrapper {
   padding: 41px 15px 39px;
+  scroll-behavior: smooth;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;

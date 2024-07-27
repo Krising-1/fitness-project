@@ -1,6 +1,18 @@
 /* stylelint-disable */
+.swiper--reviews {
+  display: flex;
+}
+
+.swiper-slide.swiper-slide--reviews {
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+}
+
 .swiper-button-next.swiper-button-next--juri,
-.swiper-button-prev.swiper-button-prev--juri {
+.swiper-button-prev.swiper-button-prev--juri,
+.swiper-button-prev.swiper-button-prev--reviews,
+.swiper-button-next.swiper-button-next--reviews {
   display: none;
 
   @media (min-width: 768px) {
@@ -41,7 +53,9 @@
 }
 
 .swiper-button-prev.swiper-button-prev--juri,
-.swiper-button-next.swiper-button-next--juri {
+.swiper-button-next.swiper-button-next--juri,
+.swiper-button-prev.swiper-button-prev--reviews,
+.swiper-button-next.swiper-button-next--reviews {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
@@ -80,14 +94,34 @@
   }
 }
 
-.swiper-button-next.swiper-button-next--juri {
+.swiper-button-next.swiper-button-next--juri,
+.swiper-button-next.swiper-button-next--reviews {
   &::after {
     transform: translate(-50%, -50%) rotate(180deg);
   }
 }
 
-.swiper-button-prev--juri-disabled,
-.swiper-button-next--juri-disabled {
+.swiper-button-disabled {
   opacity: 0.3;
   pointer-events: none;
+}
+
+.swiper-button-next.swiper-button-next--reviews {
+  right: -106px;
+  top: 49%;
+
+  @media (min-width: 1366px) {
+    right: -121px;
+    top: 40%;
+  }
+}
+
+.swiper-button-prev.swiper-button-prev--reviews {
+  left: -106px;
+  top: 49%;
+
+  @media (min-width: 1366px) {
+    left: -121px;
+    top: 40%;
+  }
 }

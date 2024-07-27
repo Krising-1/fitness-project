@@ -16,7 +16,6 @@
     <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <script src="js/main.js" type="module" defer="defer"></script>
   </head>
 
   <body class="page-body">
@@ -38,7 +37,7 @@
                 <p class="hero__subtitle">Тренажёрный зал Групповые занятия Кардио-зона</p>
                 <h1 class="hero__title"><span class="hero__title-city">Омск</span> фитнес центр</h1>
               </div>
-              <a class="hero__button button">Купить абонемент</a>
+              <a class="hero__button button" href="#subscription">Купить абонемент</a>
             </div>
             <picture class="hero__coach-image-wrapper">
               <source media="(min-width: 1366px)" type="image/webp" srcset="img/coach-desktop@1x.webp 1x, img/coach-desktop@2x.webp 2x" width="500" height="524">
@@ -82,7 +81,7 @@
       </section>
       <section class="page-main__abonements abonements" data-test="price">
         <div class="abonements__wrapper main-wrapper">
-          <h2 class="abonements__title">Абонементы</h2>
+          <h2 class="abonements__title" id="subscription">Абонементы</h2>
           <ul class="abonements__duration-list">
             <li class="abonements__duration-item">
               <button class="abonements__duration-button abonements__duration-button--active button" type="button">1 месяц</button>
@@ -427,16 +426,127 @@
           </div>
         </div>
       </section>
+      <section class="page-main__reviews reviews" data-test="reviews">
+        <div class="reviews__wrapper main-wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__swiper-container">
+            <div class="swiper swiper--reviews">
+              <div class="swiper-wrapper swiper-wrapper--reviews">
+                <div class="swiper-slide swiper-slide--reviews">
+                  <div class="reviews__slide-container">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/reviews-anna-tablet-desktop@1x.webp 1x, img/reviews-anna-tablet-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/reviews-anna-mobile@1x.webp 1x, img/reviews-anna-mobile@2x.webp 2x" width="68" height="68">
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/reviews-anna-tablet-desktop@1x.jpg 1x, img/reviews-anna-tablet-desktop@2x.jpg 2x" width="80" height="80">
+                      <img src="img/reviews-anna-mobile@1x.jpg" srcset="img/reviews-anna-mobile@2x.jpg 2x" width="68" height="68" alt="Девушка с пучком на голове в спортивном топе." loading="lazy">
+                    </picture>
+                    <div>
+                      <h3>Анна Орлова</h3>
+                      <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время нет&nbsp;очередей»</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--reviews">
+                  <div class="reviews__slide-container">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/reviews-alina-tablet-desktop@1x.webp 1x, img/reviews-alina-tablet-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/reviews-alina-mobile@1x.webp 1x, img/reviews-alina-mobile@2x.webp 2x" width="68" height="68">
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/reviews-alina-tablet-desktop@1x.jpg 1x, img/reviews-alina-tablet-desktop@2x.jpg 2x" width="80" height="80">
+                      <img src="img/reviews-alina-mobile@1x.jpg" srcset="img/reviews-alina-mobile@2x.jpg 2x" width="68" height="68" alt="Девушка с пучком на голове в спортивном топе." loading="lazy">
+                    </picture>
+                    <div>
+                      <h3>Алина Михайлова</h3>
+                      <p>«Самый лучший клуб из всех тех в которых я была! Отличные спортивные направления, залы, оборудование, приветливый персонал, уборка помещений, залов на 1 уровне.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--reviews">
+                  <div class="reviews__slide-container">
+                    <picture>
+                      <source media="(min-width: 768px)" type="image/webp" srcset="img/reviews-sofia-tablet-desktop@1x.webp 1x, img/reviews-sofia-tablet-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/reviews-sofia-mobile@1x.webp 1x, img/reviews-sofia-mobile@2x.webp 2x" width="68" height="68">
+                      <source media="(min-width: 768px)" type="image/png" srcset="img/reviews-sofia-tablet-desktop@1x.jpg 1x, img/reviews-sofia-tablet-desktop@2x.jpg 2x" width="80" height="80">
+                      <img src="img/reviews-sofia-mobile@1x.jpg" srcset="img/reviews-sofia-mobile@2x.jpg 2x" width="68" height="68" alt="Девушка с пучком на голове в спортивном топе." loading="lazy">
+                    </picture>
+                    <div>
+                      <h3>София Медведева</h3>
+                      <p>Комфортный, чистый и светлый клуб. Приветливый персонал, удобная парковка. Приятно заниматься, очень много места, люди не мешают друг другу.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev--reviews"></div>
+            <div class="swiper-button-next swiper-button-next--reviews"></div>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__form form" data-test="form">
+        <div class="form__main-wrapper">
+          <div class="form__form-container">
+            <div class="form__wrapper main-wrapper">
+              <h2 class="visually-hidden">Акции и контакты.</h2>
+              <form class="form__form" action="https://echo.htmlacademy.ru/." method="post">
+                  <h3 class="form__title form__title--form">Бесплатное занятие</h3>
+                  <div class="form__input-wrapper">
+                    <div class="form__input-container">
+                      <input class="form__input form__input--name" type="text" name="name" placeholder="Имя" required aria-label="Укажите своё имя.">
+                      <span class="form__wrong-message form__wrong-message--name"></span>
+                    </div>
+                    <div class="form__input-container">
+                      <input class="form__input form__input--tel" type="tel" name="tel" placeholder="Телефон" required aria-label="Укажите телефон.">
+                      <span class="form__wrong-message form__wrong-message--tel"></span>
+                    </div>
+                  </div>
+                  <div class="form__button-container">
+                  <button class="form__button-submit button" type="submit">отправить</button>
+                  <span class="form__congratulation-message"></span>
+                  </div>
+              </form>
+            </div>
+          </div>
+          <div class="form__contacts-wrapper">
+            <div class="form__contacts-container">
+              <h3 class="form__title form__title--contacts">Контакты</h3>
+              <ul class="form__contacts-list">
+                <li class="form__contacts-item">
+                  <h4 class="form__contacts-item-title">Адрес:</h4>
+                  <address class="form__contacts-item-description">
+                    <a class="form__contacts-item-link" href="https://maps.app.goo.gl/GepVrf1o4T5213TR8">г. Омск, ул. 60 лет Октября, 7</a>
+                  </address>
+                </li>
+                <li class="form__contacts-item">
+                  <h4 class="form__contacts-item-title">График работы:</h4>
+                  <p class="form__contacts-item-description">
+                    Пн-Вс: с <time datetime="8:00:00">8:00</time> до <time datetime="20:00:00">22:00</time>
+                  </p>
+                </li>
+                <li class="form__contacts-item">
+                  <h4 class="form__contacts-item-title">Телефон:</h4>
+                  <p class="form__contacts-item-description">
+                  <a class="form__contacts-item-link" href="tel:+78005555555">8 800 555-55-55</a>
+                  </p>
+                </li>
+                <li class="form__contacts-item">
+                  <h4 class="form__contacts-item-title">Email:</h4>
+                  <p class="form__contacts-item-description">
+                  <a class="form__contacts-item-link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-body__footer page-footer">
 
     </footer>
     <!--
-    <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     -->
-
+    <script src="js/main.js" type="module"></script>
   </body>
 
 </html>

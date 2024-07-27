@@ -15,8 +15,8 @@ const initJuriSwiper = () => {
     spaceBetween: 40,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next--juri',
+      prevEl: '.swiper-button-prev--juri',
     },
 
     breakpoints: {
@@ -34,4 +34,33 @@ const initJuriSwiper = () => {
   });
 };
 
-export { initJuriSwiper };
+const initReviewsSwiper = () => {
+  new Swiper('.swiper--reviews', {
+
+    modules: [Navigation, Pagination],
+
+    width: 240,
+    speed: 800,
+    spaceBetween: 40,
+
+    navigation: {
+      nextEl: '.swiper-button-next--reviews',
+      prevEl: '.swiper-button-prev--reviews',
+    },
+
+    breakpoints: {
+      768: {
+        width: 500,
+        slidesPerView: 1,
+      },
+
+      1366: {
+        width: 560,
+        slidesPerView: 1,
+        allowTouchMove: false,
+      },
+    }
+  });
+};
+
+export { initJuriSwiper, initReviewsSwiper };

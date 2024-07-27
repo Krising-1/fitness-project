@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 103px ;
+    padding: 100px 103px;
   }
 }
 
@@ -214,7 +214,7 @@
   }
 
   &:focus-visible {
-    background-color: #74819C;
+    background-color: #74819c;
     outline: none;
 
     &::after,
@@ -266,7 +266,7 @@
   max-height: 0;
   overflow: hidden;
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 1s;
 
   @media (min-width: $tablet-width) {
     font: $large-tablet;
