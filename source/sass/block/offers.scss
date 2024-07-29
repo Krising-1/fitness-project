@@ -161,7 +161,10 @@
 }
 
 .offers__price-image {
+  background-color: #426ddd;
   display: block;
+  object-fit: cover;
+  height: 100%;
 }
 
 .offers__benefits-wrapper {

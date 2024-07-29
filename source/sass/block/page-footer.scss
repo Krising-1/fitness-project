@@ -1,0 +1,145 @@
+.page-footer {
+  background-color: #030a1a;
+}
+
+.page-footer__wrapper {
+  padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 45px 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 103px 41px;
+  }
+}
+
+.page-footer__wrapper picture {
+  max-height: 22px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__nave-list {
+  @include list-style-none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 36px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    column-gap: 31px;
+    max-width: 393px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 83px;
+    max-width: 601px;
+  }
+}
+
+.page-footer__nave-link {
+  font: $small-mobile;
+  text-decoration: none;
+  color: $base-white;
+  display: block;
+  padding: 5px;
+  margin: -5px;
+
+  &:hover {
+    border-bottom: 1px solid $light-border;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $light-border;
+    border: none;
+  }
+
+  &:active {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $small-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
+  }
+}
+
+.page-footer__nave-link--disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+
+.page-footer__social-list {
+  @include list-style-none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
+  }
+}
+
+.page-footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white-background;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  &:focus-visible {
+    outline: none;
+    background-color: $primary-lighter;
+  }
+
+  &:hover {
+    background-color: #74819c;
+  }
+
+  &:active {
+    background-color: $darker-background;
+  }
+}
+
+.page-footer__social-link:hover .page-footer__social-image,
+.page-footer__social-link:active .page-footer__social-image,
+.page-footer__social-link:focus-visible .page-footer__social-image {
+  color: $white-background;
+}
+
+.page-footer__social-link--disabled {
+  pointer-events: none;
+  background-color: rgba($color: $white-background, $alpha: 0.3);
+}
+
+.page-footer__social-link--disabled .page-footer__social-image {
+  color: #030a1a;
+}
+
+.page-footer__social-image {
+  display: block;
+  color: #030a1a;
+}

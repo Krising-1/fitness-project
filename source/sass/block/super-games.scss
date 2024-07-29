@@ -30,6 +30,7 @@
 .super-games__inner-container {
   display: flex;
   justify-content: space-between;
+  gap: 9px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
@@ -222,6 +223,7 @@
 
 .super-games__image {
   display: block;
+  background-color: #000145;
 
   @media (min-width: $tablet-width) {
     object-fit: cover;

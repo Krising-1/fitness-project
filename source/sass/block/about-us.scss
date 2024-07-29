@@ -189,6 +189,8 @@
       height: 15px;
       top: 49%;
       left: 53%;
+      mask-size: 15px 15px;
+      mask-repeat: no-repeat;
     }
   }
 }
@@ -258,4 +260,5 @@
 
 .about-us__video-preview {
   display: block;
+  background-color: #8296bb;
 }

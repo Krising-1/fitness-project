@@ -67,5 +67,3 @@ form.addEventListener('submit', (evt) => {
     .then(timerButtonBlock())
     .finally(submitButton.disabled = false);
 });
-
-

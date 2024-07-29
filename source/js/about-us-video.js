@@ -21,4 +21,3 @@ const startVideo = () => {
 };
 
 export { startVideo };
-
